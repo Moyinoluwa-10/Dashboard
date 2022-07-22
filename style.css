@@ -55,6 +55,34 @@ main {
   display: flex;
   /* flex-direction: column; */
   gap: 20px;
+  position: relative;
+  width: fit-content;
+}
+
+.main-sort {
+  cursor: pointer;
+}
+
+.sort-buttons {
+  position: absolute;
+  left: 60px;
+  width: 200px;
+  flex-wrap: wrap;
+  display: none;
+  gap: 5px;
+}
+
+.sort-buttons button {
+  cursor: pointer;
+}
+
+.sort-buttons.active {
+  display: flex;
+  z-index: 2;
+  background-color: darkgrey;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
 }
 
 * {

@@ -11,41 +11,61 @@ const popUpBtn = document.querySelector(".pop-up");
 const closeBtn = document.querySelector(".close-button");
 const explaination = document.querySelector(".button-explanation");
 const overlay = document.querySelector(".overlay");
+const mainSortBtn = document.querySelector(".main-sort");
+const sortBtns = document.querySelector(".sort-buttons");
 
 sort.addEventListener("click", () => {
   sortTable(0);
+  overlay.classList.remove("active");
+  sortBtns.classList.remove("active");
 });
 
 sort1.addEventListener("click", () => {
   sortTab(0);
+  overlay.classList.remove("active");
+  sortBtns.classList.remove("active");
 });
 
 sort2.addEventListener("click", () => {
   sortTable(1);
+  overlay.classList.remove("active");
+  sortBtns.classList.remove("active");
 });
 
 sort3.addEventListener("click", () => {
   sortTab(1);
+  overlay.classList.remove("active");
+  sortBtns.classList.remove("active");
 });
 
 sort4.addEventListener("click", () => {
   sortTable(2);
+  overlay.classList.remove("active");
+  sortBtns.classList.remove("active");
 });
 
 sort5.addEventListener("click", () => {
   sortTab(2);
+  overlay.classList.remove("active");
+  sortBtns.classList.remove("active");
 });
 
 sort6.addEventListener("click", () => {
   sortTable(3);
+  overlay.classList.remove("active");
+  sortBtns.classList.remove("active");
 });
 
 sort7.addEventListener("click", () => {
   sortTab(3);
+  overlay.classList.remove("active");
+  sortBtns.classList.remove("active");
 });
 
 sort1.addEventListener("click", () => {
   sortTab(0);
+  overlay.classList.remove("active");
+  sortBtns.classList.remove("active");
 });
 
 function sortTable(num) {
@@ -132,4 +152,15 @@ closeBtn.addEventListener("click", () => {
 overlay.addEventListener("click", () => {
   explaination.classList.remove("active");
   overlay.classList.remove("active");
+  sortBtns.classList.remove("active");
 });
+
+// hover effect bringing out sort buttons
+mainSortBtn.addEventListener("click", () => {
+  sortBtns.classList.toggle("active");
+  overlay.classList.add("active");
+});
+
+// mainSortBtn.addEventListener("click", () => {
+//   sortBtns.classList.remove("active");
+// });
