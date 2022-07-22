@@ -51,6 +51,11 @@ main {
   padding: 0px 10px;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
 .sort {
   display: flex;
   /* flex-direction: column; */
@@ -194,13 +199,6 @@ i {
   margin-top: auto;
 }
 
-.pop-up {
-  position: absolute;
-  right: 10px;
-  top: 0px;
-  font-size: 14px;
-}
-
 .pop-up:hover {
   cursor: pointer;
 }
@@ -216,7 +214,7 @@ i {
   justify-content: center;
   align-items: center;
   color: white;
-  width: 40%;
+  max-width: 400px;
   border-radius: 15px;
   z-index: 2;
 }
