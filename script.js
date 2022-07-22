@@ -14,6 +14,7 @@ const overlay = document.querySelector(".overlay");
 const mainSortBtn = document.querySelector(".main-sort");
 const sortBtns = document.querySelector(".sort-buttons");
 
+
 // sort.addEventListener("click", () => {
 //   sortTable(0);
 //   overlay.classList.remove("active");
