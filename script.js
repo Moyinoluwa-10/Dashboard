@@ -14,11 +14,11 @@ const overlay = document.querySelector(".overlay");
 const mainSortBtn = document.querySelector(".main-sort");
 const sortBtns = document.querySelector(".sort-buttons");
 
-sort.addEventListener("click", () => {
-  sortTable(0);
-  overlay.classList.remove("active");
-  sortBtns.classList.remove("active");
-});
+// sort.addEventListener("click", () => {
+//   sortTable(0);
+//   overlay.classList.remove("active");
+//   sortBtns.classList.remove("active");
+// });
 
 sort1.addEventListener("click", () => {
   sortTab(0);
