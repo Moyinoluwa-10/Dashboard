@@ -300,6 +300,8 @@ th, td {
 }
 
 th {
+    text-transform: uppercase;
+    text-align: center;
     background-color: #818181;
 }
 
