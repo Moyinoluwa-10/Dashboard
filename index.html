@@ -15,7 +15,7 @@
 <body>
 
     <!-- Navigation Menu  -->
-    <div class="sidenav">
+    <div class="navbar">
         <a href="#" class="active"><i class="fa-solid fa-house"></i>Dashboard</a>
         <a href="#"><i class="fa-solid fa-book-open"></i>Manage Courses</a>
         <a href="#"><i class="fa-solid fa-table-cells"></i>Timetable</a>
@@ -25,6 +25,22 @@
     <!-- Main Section -->
     <main>
         
+        <!-- Welcome Section -->
+        <div class="welcome">
+            <img src="./images/welcome.jpg" alt="welcome-image">
+        </div>
+
+        <!-- Progress Section -->
+        <div class="progress">
+            
+            <div class="progress-bar">
+                <div class="progress-bar-color"></div>
+            </div>
+            
+            <div class="progress-text">75% Complete</div>
+        
+        </div>
+
         <!-- Instruction Menu  -->
         <div class="overlay"></div>
     
@@ -63,7 +79,7 @@
         <!-- Sort Menu -->
         <div class="dropdown">
             
-            <button class="dropbtn">Sort</button>
+            <button class="dropdown-button">Sort</button>
             
             <div class="dropdown-content">
             
@@ -101,82 +117,75 @@
         
        
         <!-- Table Section -->
-        <table id="myTable">
-    
-            <tr>
-              <th>Name</th>
-              <th>Age</th>
-              <th>Track</th>
-              <th>Gender</th>
-            </tr>
-            
-            <tr>
-              <td>Oluwatoyin John</td>
-              <td>18</td>
-              <td>Frontend Engineering</td>
-              <td>Female</td>
-            </tr>
-            
-            <tr>
-              <td>Anthony Charles</td>
-              <td>24</td>
-              <td>Backend Engineering</td>
-              <td>Male</td>
-            </tr>
-            
-            <tr>
-              <td>Tunde Ednut</td>
-              <td>23</td>
-              <td>Frontend Engineering</td>
-              <td>Female</td>
-            </tr>
-            
-            <tr>
-              <td>Alexander Williams</td>
-              <td>35</td>
-              <td>Cloud Engineering</td>
-              <td>Male</td>
-            </tr>
-            
-            <tr>
-              <td>Justin Low</td>
-              <td>30</td>
-              <td>Cloud Engineering</td>
-              <td>Female</td>
-            </tr>
-            
-            <tr>
-              <td>Tope Kosoko</td>
-              <td>28</td>
-              <td>Frontend Engineering</td>
-              <td>Female</td>
-            </tr>
-            
-            <tr>
-              <td>Jake Nathan</td>
-              <td>23</td>
-              <td>Backend Engineering</td>
-              <td>Male</td>
-            </tr>
-            
-            <tr>
-              <td>Daniel Victor</td>
-              <td>20</td>
-              <td>Cloud Engineering</td>
-              <td>Male</td>
-            </tr>
+        <div class="table-container">
+
+            <table id="myTable">
         
-        </table>
-        
-        <!-- Progress Section -->
-        <div class="progress">
+                <tr>
+                  <th>Name</th>
+                  <th>Age</th>
+                  <th>Track</th>
+                  <th>Gender</th>
+                </tr>
+                
+                <tr>
+                  <td>Oluwatoyin John</td>
+                  <td>18</td>
+                  <td>Frontend Engineering</td>
+                  <td>Female</td>
+                </tr>
+                
+                <tr>
+                  <td>Anthony Charles</td>
+                  <td>24</td>
+                  <td>Backend Engineering</td>
+                  <td>Male</td>
+                </tr>
+                
+                <tr>
+                  <td>Tunde Ednut</td>
+                  <td>23</td>
+                  <td>Frontend Engineering</td>
+                  <td>Female</td>
+                </tr>
+                
+                <tr>
+                  <td>Alexander Williams</td>
+                  <td>35</td>
+                  <td>Cloud Engineering</td>
+                  <td>Male</td>
+                </tr>
+                
+                <tr>
+                  <td>Justin Low</td>
+                  <td>30</td>
+                  <td>Cloud Engineering</td>
+                  <td>Female</td>
+                </tr>
+                
+                <tr>
+                  <td>Tope Kosoko</td>
+                  <td>28</td>
+                  <td>Frontend Engineering</td>
+                  <td>Female</td>
+                </tr>
+                
+                <tr>
+                  <td>Jake Nathan</td>
+                  <td>23</td>
+                  <td>Backend Engineering</td>
+                  <td>Male</td>
+                </tr>
+                
+                <tr>
+                  <td>Daniel Victor</td>
+                  <td>20</td>
+                  <td>Cloud Engineering</td>
+                  <td>Male</td>
+                </tr>
             
-            <div class="progress-bar">
-                <div class="pcolor"></div>
-            </div>
-            
-            <div class="ptext">75% Complete</div>
-        
+            </table>
+
         </div>
 
         <!-- Statistics Section -->
