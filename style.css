@@ -43,7 +43,7 @@ body {
 }
 
 
-i {
+.navbar i {
     margin-right: 15px;
     font-size: 15px;
     color: black;
@@ -199,7 +199,6 @@ main {
     cursor: pointer;
 }
   
-  
 .dropdown-content {
     display: none;
     position: absolute;
@@ -207,16 +206,19 @@ main {
     left: 105px;
     background-color: #f1f1f1;
     min-width: 160px;
-    /* width: auto; */
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
-  
-.dropdown-content .drop {
+
+.drop {
+    display: block;
     color: black;
     padding: 12px 16px;
-    /* text-decoration: none; */
-    display: block;
+    cursor: pointer;
+}
+
+.drop:hover {
+    background-color: #ddd;
 }
 
 .options {
@@ -225,21 +227,7 @@ main {
     top: 0;
     left: 160px;
     background-color: #f1f1f1;
-    /* min-width: 160px; */
-    width: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    /* z-index: 1; */
-}
-
-.options button {
-    background-color: #04AA6D;
-    color: white;
-    width: 160px;
-    padding: 12px 16px;
-    font-size: 16px;
-    border: none;
-    margin: none;
-    cursor: pointer;
 }
 
 .options.options2 {
@@ -254,20 +242,27 @@ main {
     top: 126px;
 }
 
+.options button {
+    width: 150px;
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    border: none;
+    margin: none;
+    cursor: pointer;
+}
+
 .options button:hover {
     background-color: #F1F1F1;
     color: #010101;
-}
-
-.dropdown-content .drop:hover {
-    background-color: #ddd;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-.dropdown:hover .dropbtn {
+.dropdown:hover .dropdown-button {
     background-color: #3e8e41;
 }
 
@@ -289,7 +284,7 @@ main {
 
 /* Styling Table Section */
 .table-container {
-    padding: 200px 15px 50px 15px;
+    padding: 180px 15px 50px 15px;
 }
 
 table {
@@ -313,69 +308,60 @@ tr:nth-child(odd) {
 }
 
 /* Styling Statistics Section */
-.hello {
-  width: 300px;
-  height: 400px;
-  background-color: rgb(200, 200, 200);
-  border-radius: 10px;
-  margin: auto;
-  margin-bottom: 50px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  padding-bottom: 50px;
-  /* padding-top: 50px; */
+.stat-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
 }
 
-.hellox {
-  width: 200px;
-  height: 400px;
-  background-color: rgb(200, 200, 200);
-  border-radius: 10px;
-  margin: auto;
-  margin-bottom: 50px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  padding-bottom: 50px;
-  /* padding-top: 50px; */
+.stat-box {
+    width: 300px;
+    height: 400px;
+    background-color: rgb(200, 200, 200);
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 50px;
 }
 
-.bars {
-  width: 80%;
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
-  align-content: flex-end;
-  padding-bottom: 20px;
-  border-bottom: 2px solid black;
+.stat-box.box1 {
+    width: 200px;
+}
+
+.bar-container {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    align-content: flex-end;
+    padding-bottom: 20px;
+    border-bottom: 2px solid black;
+}
+
+.bar-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    align-self: flex-end;
+    margin-top: auto;
 }
 
 .bar {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  align-self: flex-end;
-  margin-top: auto;
-  /* border-bottom: 2px solid black; */
+    height: 150px;
+    width: 50px;
+    background-color: aqua;
+    border-radius: 5px;
+    margin-top: auto;
 }
 
-.ba {
-  height: 150px;
-  width: 50px;
-  background-color: aqua;
-  border-radius: 5px;
-  margin-top: auto;
+.bar.bar1 {
+    height: 100px;
+    width: 50px;
+    background-color: aqua;
+    border-radius: 5px;
+    margin-top: auto;
 }
-
-.ba.nne {
-  height: 100px;
-  width: 50px;
-  background-color: aqua;
-  border-radius: 5px;
-  margin-top: auto;
-}
-
-
-
